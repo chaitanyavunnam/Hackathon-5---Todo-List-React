@@ -25,8 +25,8 @@ function ListItem(props)
 		<div className="list">
 			{renderTextArea ? (
 			<>
-			<textarea onChange={updateTextData} value={textData}></textarea>
-			<button onClick={saveEditedItem} disabled={textData.trim().length===0}>save</button>
+			<textarea className="editTask" onChange={updateTextData} value={textData}></textarea>
+			<button className="saveTask" onClick={saveEditedItem} disabled={textData.trim().length===0}>save</button>
 			</>
 		) : (
 			<>
