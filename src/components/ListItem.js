@@ -31,8 +31,8 @@ function ListItem(props)
 		) : (
 			<>
 			{props.item}
-			<button onClick={renderTextBox}>edit</button>
-			<button onClick={() => props.deleteHandler(props.indx)}>delete</button>
+			<button onClick={renderTextBox} className="edit">edit</button>
+			<button onClick={() => props.deleteHandler(props.indx)} className="delete">delete</button>
 		 </>
 		)}
 		</div>
