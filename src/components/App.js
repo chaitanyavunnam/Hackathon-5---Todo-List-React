@@ -32,7 +32,6 @@ function App()
 	<div id="main">
 	<textarea id="task" onChange={updateTaskData} placeholder="enter task" value={taskData}></textarea>
 	<button id="btn" onClick={addItemToList} disabled={taskData.trim().length===0}>Add</button>
-	<br/>
 	{items.map((item,indx) => (
 	<ListItem  item={item} indx={indx} key={`${item}_${indx}`} editHandler={editHandler} deleteHandler={deleteHandler}/>
 	))}
